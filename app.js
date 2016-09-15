@@ -1,3 +1,5 @@
+$(document).ready(function() {
+    
 var randomWiki = "https://en.wikipedia.org/wiki/Special:Random";
 var searchWiki = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info%7Cextracts&indexpageids=1&pageids=&generator=search&inprop=url&exsentences=2&exlimit=10&exintro=1&exsectionformat=plain&excontinue=0&gsrnamespace=0&gsrsearch=";
 
@@ -5,7 +7,8 @@ var pageIds = []
     ,callBck = "&callback=?"
     ,search = ""
     ,mySearchQuery = "";
-$(document).ready(function() {
+
+
 //**randomWiki search link-----------------------------
 $(".randQuote").attr("href", randomWiki);
 // ----------------------------------------------------
